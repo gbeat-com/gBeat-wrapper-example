@@ -15,7 +15,7 @@ android {
         applicationId = "com.fodsample"
         minSdk = 30
         targetSdk = 34
-        versionCode = 24
+        versionCode = 25
         versionName = "1.5.1"
 
         signingConfig = signingConfigs.getByName("debug")
