@@ -2,28 +2,10 @@ package com.fodsample
 
 
 import android.os.Bundle
-import android.util.Log
 import android.widget.Toast
 import androidx.fragment.app.FragmentActivity
 import com.bpmsync.gbeat.GBeat
-import com.bpmsync.gbeat.data.model.WorkoutReport
-import com.google.android.gms.wearable.CapabilityClient
-import com.google.android.gms.wearable.Wearable
-import com.google.firebase.analytics.FirebaseAnalytics
-import com.google.firebase.analytics.logEvent
 import dagger.hilt.android.AndroidEntryPoint
-import kotlinx.coroutines.CoroutineScope
-import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.async
-import kotlinx.coroutines.awaitAll
-import kotlinx.coroutines.launch
-import kotlinx.coroutines.tasks.await
-import kotlinx.coroutines.withContext
-import kotlinx.serialization.encodeToString
-import kotlinx.serialization.json.Json
-
-
-
 
 
 @AndroidEntryPoint
