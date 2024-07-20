@@ -14,7 +14,9 @@ class MainActivity : FragmentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        GBeat().start(applicationContext, intent.getStringExtra("fodData"))
+        val fodData = intent.getStringExtra("fodData")
+        GBeat.start(applicationContext, fodData)
+        finish()
 
         try {
             val packageInfo = packageManager.getPackageInfo(packageName, 0)
@@ -24,6 +26,4 @@ class MainActivity : FragmentActivity() {
             Toast.makeText(this, "Failed to get version name", Toast.LENGTH_SHORT).show()
         }
     }
-
-
 }
