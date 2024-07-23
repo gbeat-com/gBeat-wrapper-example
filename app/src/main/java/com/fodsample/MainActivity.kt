@@ -15,7 +15,8 @@ class MainActivity : FragmentActivity() {
         super.onCreate(savedInstanceState)
 
         val fodData = intent.getStringExtra("fodData")
-        GBeat.start(applicationContext, fodData)
+        //Initialize with your own app logo
+        GBeat.start(applicationContext, R.drawable.baseline_monitor_heart_24, fodData)
         finish()
 
         try {
