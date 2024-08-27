@@ -15,8 +15,8 @@ android {
         applicationId = "com.fodsample"
         minSdk = 30
         targetSdk = 34
-        versionCode = 33
-        versionName = "1.14.1"
+        versionCode = 34
+        versionName = "1.15.1"
 
         signingConfig = signingConfigs.getByName("debug")
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
